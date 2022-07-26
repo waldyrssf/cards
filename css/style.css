@@ -1,0 +1,111 @@
+body {
+  background-color: #f2f4f5;
+  margin: 0; /* some o margin de 8px q o navegador põe automaticamente*/
+}
+
+main {
+  width: 70%; /* largura dinamica (menor que 100) ocupa 70pc da largura do monitor */
+  display: table;
+  margin: 100px auto 0 auto; /* simplificou a qntd de infos de margem, onde
+    margin top é 100px, right é auto, bottom é 0 e left é auto. Com isso, centralizamos
+    o main*/
+}
+
+.card-container {
+  width: 270px;
+  display: table; /*table faz com que o elemtento assuma uma altura de acordo c que tá dentro dele*/
+  float: left;
+  display: table;
+  margin: 60px 60px 0 0;
+}
+
+.card {
+  width: 100%;
+  display: table;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.05); /*8px no eixo X, 8 no eixo Y, 12px de blur, rgba p/ transparência q é porcentagem*/
+  padding: 15px;
+  box-sizing: border-box; /* fala pro elemento que ao inves dele botar coisas pra fora, ele bora pra dentro*/
+}
+
+.card .card-image {
+  width: 100%; /*criei responsividade c width, max-w e height*/
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.card .card-image-3 {
+  margin-top: -55px;
+}
+
+.card .card-body {
+  width: 100%;
+  display: table; /* faz c que tenha uma altura dinamica*/
+  margin-top: 13px;
+}
+
+.card .card-body h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 24px; /*tamanho da linha com 24px de altura com texto de 24px*/
+  color: #9013fe;
+  margin: 0;
+  text-align: center;
+}
+
+.card .card-footer {
+  width: 100%;
+  display: table;
+}
+
+.card .card-body p {
+  display: block; /* display pra margin lá em baixo funcionar*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  columns: grey;
+  font-weight: bold;
+  margin: 15px 0 10px 0;
+}
+
+/* BOTÕES */
+
+.btn {
+  width: auto;
+  height: 40px;
+  display: block;
+  background-color: #39e493;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-decoration: none;
+  margin: 12px auto 0 auto;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/*botao desejável
+
+ width: auto;
+  height: 40px;
+  display: inline-block;
+  background-color: #39e493;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-decoration: none;
+  margin-top: 12px;
+  padding: 0 30px;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+*/
